@@ -91,6 +91,6 @@ var b = Cnm(5,2);
 var c = caculate();
 var c1 = caculate1();
 console.log(c);
-console.log(c1);
+console.log(c1);//为什么两种思路结果不一样？
 
 
