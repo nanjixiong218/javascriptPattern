@@ -23,7 +23,7 @@ function caculate(){
 function caculate1(){
     var i = 0,count=0;
     for(i=0;i<=76543210;i++){
-        if(isValid(i)){
+        if(isInValid(i)){
             continue;
         }else{
             if(isOdd(i)){
@@ -33,8 +33,8 @@ function caculate1(){
     }
     return count;
 }
-//判断是否有重复:有没有很好的算法？
-function isinValid(num){
+//判断是否合法:有没有很好的算法？
+function isInValid(num){
     var sNum = num.toString();
     var len = sNum.length;
     var i = 0,j= 0;
