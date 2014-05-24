@@ -38,7 +38,7 @@ function isInValid(num){
     var sNum = num.toString();
     var len = sNum.length;
     var i = 0,j= 0;
-    for(i=0;i<len;i++)
+    for(i=0;i<len;i++){
         if(sNum[i]==8||sNum[i]==9){
             return true;    
             
@@ -49,6 +49,7 @@ function isInValid(num){
                 return true;
             }
         }
+    }
     return false;
 }
 
