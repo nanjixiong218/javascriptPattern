@@ -23,7 +23,7 @@ function caculate(){
 function caculate1(){
     var i = 0,count=0;
     for(i=0;i<=76543210;i++){
-        if(isRepeat(i)){
+        if(isInValid(i)){
             continue;
         }else{
             if(isOdd(i)){
@@ -33,18 +33,24 @@ function caculate1(){
     }
     return count;
 }
-//判断是否有重复:有没有很好的算法？
-function isRepeat(num){
+//判断是否合法:有没有很好的算法？
+function isInValid(num){
     var sNum = num.toString();
     var len = sNum.length;
-    var i = 0,j= 0,flag=false;
-    for(i=0;i<len;i++)
+    var i = 0,j= 0;
+    for(i=0;i<len;i++){
+        if(sNum[i]==8||sNum[i]==9){
+            return true;    
+            
+        }
         for(j=i+1;j<len;j++){
             if(sNum[i]==sNum[j]){
-                flag=true;
+                
+                return true;
             }
         }
-    return flag;
+    }
+    return false;
 }
 
 //判断是否为奇数
@@ -91,6 +97,6 @@ var b = Cnm(5,2);
 var c = caculate();
 var c1 = caculate1();
 console.log(c);
-console.log(c1);//为什么两种思路结果不一样？
+console.log(c1);//终于相同了，结果
 
 
