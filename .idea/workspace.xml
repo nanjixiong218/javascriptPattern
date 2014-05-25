@@ -32,24 +32,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constractor.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/constractor.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="1" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0" vertical-offset="297" max-vertical-offset="459">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="factory.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/factory.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="6" selection-start="283" selection-end="285" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1512">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="strategy.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/strategy.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -59,11 +41,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test1.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="test1.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/一些小js编程题目/test1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="19" selection-start="679" selection-end="679" vertical-scroll-proportion="0.35" vertical-offset="567" max-vertical-offset="2754">
+            <state line="38" column="26" selection-start="863" selection-end="863" vertical-scroll-proportion="0.0" vertical-offset="729" max-vertical-offset="2916">
+              <folding>
+                <marker date="1400996666088" expanded="true" signature="543:761" placeholder="{...}" />
+                <marker date="1400996666088" expanded="true" signature="596:741" placeholder="{...}" />
+                <marker date="1400996666088" expanded="true" signature="622:655" placeholder="{...}" />
+                <marker date="1400996666088" expanded="true" signature="659:735" placeholder="{...}" />
+                <marker date="1400996666088" expanded="true" signature="685:725" placeholder="{...}" />
+                <marker date="1400996666088" expanded="true" signature="804:1155" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="combination.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/combination.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="86" column="0" selection-start="2387" selection-end="2387" vertical-scroll-proportion="0.0" vertical-offset="2028" max-vertical-offset="2484">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="state.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/state.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="39" selection-start="136" selection-end="136" vertical-scroll-proportion="0.37327188" vertical-offset="0" max-vertical-offset="434">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,7 +80,7 @@
       <file leaf-file-name="adapter.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/adapter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="2" selection-start="1915" selection-end="1915" vertical-scroll-proportion="0.0" vertical-offset="1899" max-vertical-offset="2403">
+            <state line="83" column="2" selection-start="1915" selection-end="1915" vertical-scroll-proportion="0.0" vertical-offset="2241" max-vertical-offset="2403">
               <folding />
             </state>
           </provider>
@@ -133,9 +142,11 @@
         <option value="$PROJECT_DIR$/debug.js" />
         <option value="$PROJECT_DIR$/一些小js编程题目/adaptor.js" />
         <option value="$PROJECT_DIR$/一些小js编程题目/adapter.js" />
-        <option value="$PROJECT_DIR$/一些小js编程题目/test1.js" />
         <option value="$PROJECT_DIR$/adapter.js" />
         <option value="$PROJECT_DIR$/responseChain.js" />
+        <option value="$PROJECT_DIR$/一些小js编程题目/test1.js" />
+        <option value="$PROJECT_DIR$/combination.js" />
+        <option value="$PROJECT_DIR$/state.js" />
       </list>
     </option>
   </component>
@@ -171,6 +182,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -205,14 +217,13 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/responseChain.js" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/combination.js" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
@@ -220,7 +231,15 @@
       <recent name="D:\mywork\WebstormProjects\DesignModule" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.debug">
+  <component name="RunManager" selected="Node.js.combination">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -231,12 +250,8 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -244,10 +259,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="NodeJSRemoteDebug" factoryName="Node.js Remote Debug">
@@ -301,13 +312,22 @@
       <ConfigurationWrapper RunnerId="NodeJS.run" />
       <method />
     </configuration>
-    <list size="6">
+    <configuration default="false" name="combination" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="combination.js" working-dir="$PROJECT_DIR$">
+      <browser start="false" url="" with-js-debugger="false" />
+      <RunnerSettings RunnerId="NodeJS.debug" />
+      <RunnerSettings RunnerId="NodeJS.run" />
+      <ConfigurationWrapper RunnerId="NodeJS.debug" />
+      <ConfigurationWrapper RunnerId="NodeJS.run" />
+      <method />
+    </configuration>
+    <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Node.js.singleton" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.test" />
       <item index="2" class="java.lang.String" itemvalue="Node.js.iterator" />
       <item index="3" class="java.lang.String" itemvalue="Node.js.debug" />
       <item index="4" class="java.lang.String" itemvalue="Node.js.adapter" />
       <item index="5" class="java.lang.String" itemvalue="Node.js.responseChain" />
+      <item index="6" class="java.lang.String" itemvalue="Node.js.combination" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -364,11 +384,11 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293718" sideWeight="0.4996277" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15040953" sideWeight="0.77589136" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41426146" sideWeight="0.4996277" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15040953" sideWeight="0.82003397" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17996605" sideWeight="0.4996277" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293718" sideWeight="0.5003723" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22410867" sideWeight="0.4996277" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48726654" sideWeight="0.4996277" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -389,34 +409,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/debug.js</url>
-          <line>2</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="14" />
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/constractor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="1" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0" vertical-offset="297" max-vertical-offset="459">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/factory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="32" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="1512">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/strategy.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="1" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="972" max-vertical-offset="2295">
@@ -494,13 +493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/debug.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="9" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="297">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/responseChain.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="27" selection-start="829" selection-end="829" vertical-scroll-proportion="0.0" vertical-offset="979" max-vertical-offset="1566">
@@ -510,8 +502,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/一些小js编程题目/test1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="19" selection-start="679" selection-end="679" vertical-scroll-proportion="0.35" vertical-offset="567" max-vertical-offset="2754">
+        <state line="38" column="26" selection-start="863" selection-end="863" vertical-scroll-proportion="0.0" vertical-offset="729" max-vertical-offset="2916">
+          <folding>
+            <marker date="1400996666088" expanded="true" signature="543:761" placeholder="{...}" />
+            <marker date="1400996666088" expanded="true" signature="596:741" placeholder="{...}" />
+            <marker date="1400996666088" expanded="true" signature="622:655" placeholder="{...}" />
+            <marker date="1400996666088" expanded="true" signature="659:735" placeholder="{...}" />
+            <marker date="1400996666088" expanded="true" signature="685:725" placeholder="{...}" />
+            <marker date="1400996666088" expanded="true" signature="804:1155" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debug.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="9" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="297">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/combination.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="0" selection-start="2387" selection-end="2387" vertical-scroll-proportion="0.0" vertical-offset="2028" max-vertical-offset="2484">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/state.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="39" selection-start="136" selection-end="136" vertical-scroll-proportion="0.37327188" vertical-offset="0" max-vertical-offset="434">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
