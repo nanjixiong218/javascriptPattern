@@ -1,0 +1,56 @@
+body{
+
+    margin:0;  
+
+}
+
+/*向导容器*/
+
+#wizard{
+
+    height:400px;
+
+    width:600px;
+
+    background-color:#999;
+
+}
+
+/*向导的主体内容，用列表展示*/
+
+#wizard ul{
+
+    margin:10px;
+
+    height:80%;
+
+}
+
+/*横向显示列表内容*/
+
+#wizard li{
+
+    display:inline-block;
+
+    margin:10px;
+
+    cursor:pointer;
+
+}
+
+/*列表的标题*/
+
+#wizard h2{
+
+    margin:10px;
+
+}
+
+/*列表的功能条，如返回按钮*/
+
+#wizard .bar{
+
+    margin:10px;
+
+    clear:both;
+
