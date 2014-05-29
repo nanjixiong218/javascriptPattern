@@ -26,7 +26,7 @@
       <file leaf-file-name="Bridge.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Bridge.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="7" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+            <state line="1" column="7" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="270">
               <folding />
             </state>
           </provider>
@@ -35,10 +35,8 @@
       <file leaf-file-name="facade.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/facade.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="6" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="14" column="6" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="540">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -46,18 +44,25 @@
       <file leaf-file-name="Proxy.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Proxy.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="5" column="0" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="513">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Decorator.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Decorator.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Decorator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="5" selection-start="3032" selection-end="3032" vertical-scroll-proportion="0.15789473" vertical-offset="2916" max-vertical-offset="3456">
+            <state line="10" column="5" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3456">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PubSub.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PubSub.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="165" column="11" selection-start="4047" selection-end="4047" vertical-scroll-proportion="0.5990099" vertical-offset="4213" max-vertical-offset="4617">
               <folding />
             </state>
           </provider>
@@ -82,7 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/iterator.js" />
         <option value="$PROJECT_DIR$/一些小js编程题目/debug.js" />
         <option value="$PROJECT_DIR$/debug.js" />
         <option value="$PROJECT_DIR$/一些小js编程题目/adaptor.js" />
@@ -98,6 +102,7 @@
         <option value="$PROJECT_DIR$/facade.js" />
         <option value="$PROJECT_DIR$/Proxy.js" />
         <option value="$PROJECT_DIR$/Decorator.js" />
+        <option value="$PROJECT_DIR$/PubSub.js" />
       </list>
     </option>
   </component>
@@ -173,8 +178,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PubSub.js" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Decorator.js" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
@@ -182,15 +187,7 @@
       <recent name="D:\mywork\WebstormProjects\DesignModule" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.Decorator">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Node.js.PubSub">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -201,8 +198,12 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -210,6 +211,10 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="NodeJSRemoteDebug" factoryName="Node.js Remote Debug">
@@ -271,7 +276,15 @@
       <ConfigurationWrapper RunnerId="NodeJS.run" />
       <method />
     </configuration>
-    <list size="7">
+    <configuration default="false" name="PubSub" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="PubSub.js" working-dir="$PROJECT_DIR$">
+      <browser start="false" url="" with-js-debugger="false" />
+      <RunnerSettings RunnerId="NodeJS.debug" />
+      <RunnerSettings RunnerId="NodeJS.run" />
+      <ConfigurationWrapper RunnerId="NodeJS.debug" />
+      <ConfigurationWrapper RunnerId="NodeJS.run" />
+      <method />
+    </configuration>
+    <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Node.js.singleton" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.test" />
       <item index="2" class="java.lang.String" itemvalue="Node.js.iterator" />
@@ -279,6 +292,7 @@
       <item index="4" class="java.lang.String" itemvalue="Node.js.adapter" />
       <item index="5" class="java.lang.String" itemvalue="Node.js.responseChain" />
       <item index="6" class="java.lang.String" itemvalue="Node.js.Decorator" />
+      <item index="7" class="java.lang.String" itemvalue="Node.js.PubSub" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -335,11 +349,11 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293718" sideWeight="0.4996277" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15040953" sideWeight="0.93887943" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.06451613" sideWeight="0.4996277" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15040953" sideWeight="0.7317487" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4295416" sideWeight="0.4996277" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293718" sideWeight="0.5003723" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.061120544" sideWeight="0.4996277" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26825127" sideWeight="0.4996277" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -363,15 +377,10 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="20" />
+      <option name="time" value="22" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/singleton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="14" selection-start="1436" selection-end="1436" vertical-scroll-proportion="0.0" vertical-offset="1587" max-vertical-offset="3456" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/iterator.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="27" selection-start="705" selection-end="705" vertical-scroll-proportion="0.519573" vertical-offset="572" max-vertical-offset="1134" />
@@ -422,19 +431,10 @@
         <state line="8" column="20" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="2916" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/facade.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="6" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -448,15 +448,27 @@
     <entry file="file://$PROJECT_DIR$/Proxy.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Decorator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="5" selection-start="3032" selection-end="3032" vertical-scroll-proportion="0.15789473" vertical-offset="2916" max-vertical-offset="3456">
+        <state line="10" column="5" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3456">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PubSub.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="165" column="11" selection-start="4047" selection-end="4047" vertical-scroll-proportion="0.5990099" vertical-offset="4213" max-vertical-offset="4617">
           <folding />
         </state>
       </provider>
