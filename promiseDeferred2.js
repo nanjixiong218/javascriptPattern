@@ -83,4 +83,21 @@ readFile1("one.text","utf-8").then(function(){
     });
 
 //一个批量序列化方法
-var smooth= function
+var smooth= function(method){
+    return function(){
+        var deferred = new Deferred();
+        var args = Array.prototype.slice.call(arguments,0);
+        args.push(deferred.promisify());
+        method.apply(null,args);
+        return deferred.promise;
+    }
+}
+
+//如此一来，readFile的promise化就可以这样了
+var readFile = smooth(fs.readFile);
+readFile("one.text","utf-8").then(function(file1){
+    console.log("oneUsed is ok  begin2:");
+    return readFile("oneUsed","utf-8");
+}).then(function(file2){
+    console.log(file2);
+});
