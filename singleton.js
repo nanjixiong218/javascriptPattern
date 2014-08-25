@@ -46,19 +46,18 @@ var SingV2 = (function(){
 //这个就可以用function的prototype了
 var SingV3 = (function(){
     var instance;
-    function init (args){
-        args = args||{};
+    function init (arg1,arg2){
         this.name = "singleTest";
-        this.property1 = arges.property1;
-        this.property2 = arges.property2;
+        this.property1 = arg1;
+        this.property2 = arg2;
     }
     init.prototype.method1=function(){};
     init.prototype.method2=function(){};
     return {
         name:"singleTest",
-        getInstance:function(args){
+        getInstance:function(arg1,arg2){
             if(!instance){
-                instance =new init(arges);
+                instance =new init(arg1,arg2);
                 return instance;
             }else{
                 return instance;
@@ -70,20 +69,19 @@ var SingV3 = (function(){
 //一般实现方法1
 //构造函数保存instance属性
 function Universe1 (){
-    if(typeof Universe1.instance ==='object'){
+    if(typeof Universe1.instance === 'object'){
         return Universe1.instance;
     }
     this.p1='p1';
-
-    Universe1.instance=this;
+    Universe1.instance = this;
 }
 
 //一般方法2
 //重写构造方法
 function Universe2(){
     var instance = this;
-    this.p1="p1";
-    Universe2=function(){
+    this.p1 = "p1";
+    Universe2 = function(){
         return instance;
     }
 }
@@ -97,7 +95,7 @@ function Universe3(){
 
     Universe3 = function(){
         return instance;
-    }
+    };
     //后期处理原型属性
     Universe3.prototype = this;
 
@@ -117,7 +115,7 @@ var Universe4 ;
         if(instance){
             return instance;
         }
-        instance =this;
-        this.p1="p1";
+        instance = this;
+        this.p1 = "p1";
     }
 })();
