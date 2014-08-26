@@ -1,4 +1,4 @@
-//第一版，借助events模块，promise序列化。
+
 var events = require("events");
 function Promise(){
 	events.EventEmitter.call(this);
@@ -16,22 +16,22 @@ Promise.prototype.then =function(success,error,progress){
 		this.once("progress",progress);
 	}
 	return this;
-}
+};
 var Defferred  = function(){
 	this.state = 'unsuccess';
 	this.promise = new Promise();
-}
+};
 Defferred.prototype.resolve = function(obj){
 	this.state = "success";	
 	this.promise.emit("success",obj);
-}
+};
 Defferred.prototype.reject = function(error){
 	this.state= "error";
 	this.promise.emit("error",error);
-}
+};
 Defferred.prototype.progress = function(data){
 	this.promise.emit("progress",data);
-}
+};
 var promisify = function(res){
 	var defferred = new Defferred();
 	var result = '';
@@ -48,7 +48,7 @@ var promisify = function(res){
 	});
 
 	return defferred.promise;
-}
+};
 promisify(res).then(function(){
 //do something after success
 
@@ -58,7 +58,6 @@ promisify(res).then(function(){
 //do something in progressing
 });
 
-//提供一个把回调函数promisify的方法,来自于Q
 Defferred.prototype.promisify = function(){
 	var defferred =this;
 	return function(err,value){
@@ -70,20 +69,17 @@ Defferred.prototype.promisify = function(){
 			defferred.resolve(value);
 		}
 	}
-}
-//以fs.readFile为例
+};
 var readFile = function(file,encoding){
 	var defferred = new Defferred();
 	fs.readFile(file,encoding,defferred.promisify());
 	return defferred.promise;
-}
-//于是就可以这样调用readFile了
+};
 readFile("xu.text","utf-8").then(function(result){
 	console.log(result);
 },function(err){
 	console.log(err);
 });
-//在提供一个多异步协作的处理方法
 Defferred.prototype.all = function(promises){
 	var length = promises.length;
 	var that = this;
@@ -100,8 +96,7 @@ Defferred.prototype.all = function(promises){
 		});
 	});
 	return this.promise;
-}
-//于是可以这样执行依赖多个异步的执行
+};
 var promise1 = readFile("one.text","utf-8");
 var promise2 = readFile("second.text","utf-8");
 var defferred = new Defferred();
@@ -110,4 +105,3 @@ defferred.all([promise1,promise2],function(results){
 },function(err){
 	//do something if err
 });
-//这样就是在读完了one.text和second.text之后才会触发回调函数
