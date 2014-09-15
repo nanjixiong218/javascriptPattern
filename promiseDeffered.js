@@ -1,4 +1,5 @@
 
+//利用nodejs的原生事件系统
 var events = require("events");
 function Promise(){
 	events.EventEmitter.call(this);
@@ -32,6 +33,7 @@ Defferred.prototype.reject = function(error){
 Defferred.prototype.progress = function(data){
 	this.promise.emit("progress",data);
 };
+//把response对象promise化
 var promisify = function(res){
 	var defferred = new Defferred();
 	var result = '';
