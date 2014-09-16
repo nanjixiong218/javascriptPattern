@@ -68,39 +68,39 @@ var SingV3 = (function(){
 
 //一般实现方法1
 //构造函数保存instance属性
-function Universe1 (){
-    if(typeof Universe1.instance === 'object'){
-        return Universe1.instance;
+function SingV4 (){
+    if(typeof SingV4.instance === 'object'){
+        return SingV4.instance;
     }
     this.p1='p1';
-    Universe1.instance = this;
+    SingV4.instance = this;
 }
 
 //一般方法2
 //重写构造方法
-function Universe2(){
+function SingV5(){
     var instance = this;
     this.p1 = "p1";
-    Universe2 = function(){
+    SingV5 = function(){
         return instance;
     }
 }
 //方法3
 //没看懂这样写的好处
 //阻止了return this；this成为了其原型，也就是可以通过设置this来设置原型，没什么意义啊？
-function Universe3(){
+function SingV6(){
     //缓存实例
     var instance;
     //重写构造方法
 
-    Universe3 = function(){
+    SingV6 = function(){
         return instance;
     };
     //后期处理原型属性
-    Universe3.prototype = this;
+    SingV6.prototype = this;
 
-    instance = new Universe3();
-    instance.constructor = Universe3;
+    instance = new SingV6();
+    instance.constructor = SingV6;
 
     instance.p1="p1";
 
@@ -108,10 +108,10 @@ function Universe3(){
 }
 //方法4
 //用立即执行函数实现
-var Universe4 ;
+var SingV7 ;
 (function(){
     var instance;
-    Universe4 = function(){
+    SingV7 = function(){
         if(instance){
             return instance;
         }

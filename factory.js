@@ -2,7 +2,6 @@
  * Created by xu on 14-5-19.
  */
 
-
 var page = page || {};
 page.dom = page.dom || {};
 page.dom.Text = function(where){
