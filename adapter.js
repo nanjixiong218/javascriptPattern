@@ -1,6 +1,7 @@
 /**
  * 适配器模式
- * Created by xu on 14-5-23.
+ * 适配器，字面意义上感觉应该是一种磨合两种东西的不同点的东西。
+ * 在代码上的体现就是使两种具有不同接口的两个对象的能够用统一接口去调用，磨平掉这种接口的不一致性。请看下面的实例
  */
 
 function Bird (){
@@ -9,7 +10,7 @@ function Bird (){
 }
 Bird.prototype.fly = function(){
     throw new Error("此方法必须被覆盖！");
-}
+};
 
 //以上可以模拟接口
 
@@ -23,10 +24,10 @@ function Swallow(){
 Swallow.prototype = new Bird();
 Swallow.prototype.fly=function(){//必须重写fly
     console.log("Swallow fly!");
-}
+};
 Swallow.prototype.swallowSay = function(){
     console.log("Swallow say!");
-}
+};
 
 function Turkey(){
     Bird.apply(this);
@@ -37,10 +38,10 @@ function Turkey(){
 }
 Turkey.prototype.fly = function (){
     console.log("Turkey fly");
-}
+};
 Turkey.prototype.turkeySay = function(){
     console.log("turkey say!");
-}
+};
 //swallow和turkey都继承制bird类，对于fly方法，他们的接口相同，且都是覆盖实现，
 // 实际上应该有一个say方法也让他们同时继承实现，但是实际情况中有些时候原有设计不太好，
 // 出现了各自分别有一个swallowSay，turkeySay方法，接口不同，
@@ -53,7 +54,7 @@ function TurkeyAdapterSwallow(oTurkey){//这个适配器用来适配swallow的�
 TurkeyAdapterSwallow.prototype = new Turkey();
 TurkeyAdapterSwallow.prototype.swallowSay = function(){//适配swallowSay方法
     this.oTurkey.turkeySay();//内部实际调用的还是自己的say
-}
+};
 
 //使用
 var  bird = new Bird();
