@@ -52,7 +52,7 @@ function ConcreteDecorator1(decorated){//这是真正用于扩展功能的装饰
     // 区别就是大叔把AbstractDecorator暴露给this.base了，不明白为什么。对这个例子来说效果相同，不细追究
     AbstractDecorator.call(this,decorated);
 
-    decorated.pre = function(){//扩展被装饰着
+    decorated.pre = function(){//扩展被装饰者
         console.log("pre1:this is doing pre1");
     };
     decorated.after = function(){
@@ -85,9 +85,6 @@ var decorated3 = new ConcreteDecorator1(decorated1);
 decorated3.perform();
 var decorated4 = new ConcreteDecorator2(decorated2);
 decorated4.perform();
-//评价，这种方式没看出好在哪里，而且被装饰后的对象，依赖于装饰前的对象，
-// 比如对于decorated1和decorated2,他俩都依赖于concrete，对concrete的扩展方法改变了，他俩会同时变化。
-// 而且扩展起来也不是很方便，还需要研究啊。
 
 //example 3
 console.log("example3:");
@@ -110,7 +107,7 @@ tree.Blue = function(){
         this.Blue.prototype.decorator();
         console.log("blue扩展！");
     }
-}
+};
 var tree1 = tree.getDecorator("Red");
 var tree2 = tree.getDecorator("Blue");
 tree1.decorator();
