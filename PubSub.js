@@ -8,20 +8,18 @@ function PubSub(){
     this.subUid=-1;
 }
 PubSub.prototype.publish=function(topic,arges){
+
     if(!this.topics[topic]){
         return false;
     }
+
     var that = this;//setTimeout中用到了this,所以先保存，否则setTimeout内部的this执行全局
     setTimeout(function(){//用setTimeout把所有回调放在下一个tick执行，而不是立即执行
-        /*用for in遍历数组不能这样，可以用[].prototype.forEach(function(a){})来遍历
-        for(var m1 in that.topics[topic]){
-                m1.func(topic,arges);
-        }
-        */
         for(var i=0;i<that.topics[topic].length;i++){
             that.topics[topic][i].func(topic,arges);
         }
     },0);
+
     return true;
 };
 PubSub.prototype.subscribe =function(topic,func){
@@ -45,8 +43,8 @@ PubSub.prototype.unsub =function(token){
             }
         }
     }
-}
-
+};
+//使用
 var pub = new PubSub();
 pub.subscribe("one",function(topic,data){
     console.log("this is "+topic+"say:"+data);
@@ -60,8 +58,9 @@ var token = pub.subscribe("two",function(topic,data){
 pub.publish("one","hello one");
 pub.publish("two",["hello two",'aaad']);
 pub.publish("two",[{"color":'red'},{"name":"xu"}]);
-setTimeout(function(){//在setTimeout中取消居然也可以，因为publish的回调也是在setTimeout中，
-// 在下一个tick中本setTimeout因为先注册的，所以先执行。所以pub.unsub可以xiezaisetTimeout中。
+setTimeout(function(){
+//在setTimeout中取消也可以，因为publish的回调也是在setTimeout中，
+//在下一个tick中本setTimeout因为先注册的，所以先执行。所以pub.unsub可以写在setTimeout中。
     pub.unsub(token);
 },0);
 pub.unsub(one2);
@@ -90,7 +89,8 @@ Observer.prototype={
             el.call(scope,data);
         });
     }
-}
+};
+
 var o = new Observer();//这里和第一个例子不一样，观察者和被观察者只有有一个衔接，即观察的是什么，
 // 第一个例子中需要指定，example1就是要观察的。这里o本身就是一个要观察
 var f1 = function(data){
@@ -98,7 +98,7 @@ var f1 = function(data){
 };
 var f2 = function(data){
     console.log("f2:"+data+":f2");
-}
+};
 o.subscripe(f1);
 o.subscripe(f2);
 
@@ -130,12 +130,12 @@ var  Observer = {
         }
     },
     make:function(o){
-        for(i in this){
+        for(var i in this){
             o[i]=this[i];
             o.subsribers;
         }
     }
-}
+};
 
 
 var blog = {
@@ -149,7 +149,7 @@ var user = {
     vote:function(id){
         var msg = "投票人"+"id"+ "是";
     }
-}
+};
 
 //jquery版
 (function($){
