@@ -67,7 +67,8 @@ pub.unsub(one2);
 pub.publish("one","failed");
 pub.publish("two","failed");
 
-//版本2  用原型实现，更巧妙
+//版本2  用原型实现，更巧妙,不同点是，每一个Observer对象就是一个被观察者，在其上绑定回调
+//相当于一个具有观察者功能的对象，而版本一的对象是可以进行多个事件绑定的。
 
 function Observer(){
     this.fns = [];
